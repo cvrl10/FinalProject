@@ -1,0 +1,103 @@
+body
+{
+    background-image: url("../img/background1.jpg");
+    width: 100%;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 25pt;
+    margin-top: 10px;
+    gap: 20px;
+    
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(10, 25px);
+}
+.panel
+{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-color: black;
+}
+#home
+{
+    order: 2;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#home_button
+{
+    color: white;
+    background-color: black;
+}
+#register
+{
+    order: 1;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#header
+{
+    border-style: solid;
+    border-color: black;
+}
+.sidebar
+{
+    margin-right: 100px;
+}
+.first
+{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-color: black;
+}
+.last
+{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-color: black;
+}
+.nav-side-menu
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    border-color: black;
+}
+.drop-down
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-color: black;
+}
+.classes
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    border-color: black;
+}
+#classes
+{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(10, 25px);
+    gap: 10px;
+}
